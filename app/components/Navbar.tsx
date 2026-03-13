@@ -47,7 +47,7 @@ export const Navbar = () => {
                 layoutId="nav-underline"
                 className="pointer-events-none absolute inset-x-1 -bottom-1 h-px bg-linear-to-r from-transparent via-amber-300 to-transparent"
                 initial={false}
-                transition={{ type: "spring", stiffness: 450, damping: 40 }}
+                transition={{ type: "spring" as const, stiffness: 450, damping: 40 }}
               />
             </button>
           ))}

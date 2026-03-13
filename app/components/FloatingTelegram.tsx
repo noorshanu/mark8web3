@@ -28,7 +28,7 @@ export const FloatingTelegram = () => {
           ? { opacity: 1, y: 0, scale: 1 }
           : { opacity: 0, y: 40, scale: 0.9 }
       }
-      transition={{ type: "spring", stiffness: 250, damping: 22 }}
+      transition={{ type: "spring" as const, stiffness: 250, damping: 22 }}
       className="fixed bottom-5 right-4 z-40 flex items-center gap-2 rounded-full bg-linear-to-r from-sky-400 to-emerald-400 px-4 py-2 text-xs font-semibold text-black shadow-[0_0_40px_rgba(56,189,248,0.75)] md:bottom-6 md:right-6"
     >
       <div className="flex h-7 w-7 items-center justify-center rounded-full bg-black/10">

@@ -69,7 +69,7 @@ export const Process = () => {
                 viewport={{ once: true, margin: "-80px" }}
                 transition={{
                   delay: index * 0.04,
-                  type: "spring",
+                  type: "spring" as const,
                   stiffness: 130,
                   damping: 18,
                 }}

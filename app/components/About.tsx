@@ -13,7 +13,11 @@ const container = {
 
 const item = {
   hidden: { opacity: 0, y: 18 },
-  show: { opacity: 1, y: 0, transition: { type: "spring", stiffness: 140, damping: 18 } },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: { type: "spring" as const, stiffness: 140, damping: 18 },
+  },
 };
 
 export const About = () => {

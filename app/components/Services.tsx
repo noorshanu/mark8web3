@@ -109,7 +109,7 @@ const card = {
   show: {
     opacity: 1,
     y: 0,
-    transition: { type: "spring", stiffness: 130, damping: 18 },
+    transition: { type: "spring" as const, stiffness: 130, damping: 18 },
   },
 };
 

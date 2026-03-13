@@ -53,7 +53,7 @@ export const WhyChooseUs = () => {
             initial={{ opacity: 0, y: 24 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-80px" }}
-            transition={{ type: "spring", stiffness: 140, damping: 18 }}
+            transition={{ type: "spring" as const, stiffness: 140, damping: 18 }}
             className="space-y-4"
           >
             {points.map((point) => {
@@ -81,7 +81,7 @@ export const WhyChooseUs = () => {
             initial={{ opacity: 0, x: 28 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "-80px" }}
-            transition={{ delay: 0.08, type: "spring", stiffness: 130, damping: 18 }}
+            transition={{ delay: 0.08, type: "spring" as const, stiffness: 130, damping: 18 }}
             className="space-y-4 rounded-3xl border border-amber-300/30 bg-linear-to-b from-amber-300/10 via-neutral-950/90 to-black/95 p-5 text-xs text-neutral-200 shadow-[0_0_60px_rgba(251,191,36,0.35)]"
           >
             <p className="text-[11px] font-semibold uppercase tracking-[0.25em] text-amber-200">

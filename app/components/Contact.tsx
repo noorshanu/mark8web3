@@ -32,7 +32,7 @@ export const Contact = () => {
             initial={{ opacity: 0, y: 18 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-80px" }}
-            transition={{ type: "spring", stiffness: 130, damping: 18 }}
+            transition={{ type: "spring" as const, stiffness: 130, damping: 18 }}
             className="space-y-4 rounded-3xl border border-neutral-900 bg-neutral-950/80 p-5 text-sm text-neutral-200"
             onSubmit={(e) => e.preventDefault()}
           >
@@ -119,7 +119,7 @@ export const Contact = () => {
             initial={{ opacity: 0, y: 18 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-80px" }}
-            transition={{ delay: 0.08, type: "spring", stiffness: 130, damping: 18 }}
+            transition={{ delay: 0.08, type: "spring" as const, stiffness: 130, damping: 18 }}
             className="space-y-4 rounded-3xl border border-neutral-900 bg-neutral-950/80 p-5 text-xs text-neutral-300"
           >
             <p className="text-[11px] font-semibold uppercase tracking-[0.25em] text-neutral-400">

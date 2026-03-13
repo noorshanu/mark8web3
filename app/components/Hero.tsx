@@ -10,7 +10,7 @@ const heroParent = {
     opacity: 1,
     y: 0,
     transition: {
-      type: "spring",
+      type: "spring" as const,
       stiffness: 120,
       damping: 18,
     },
@@ -133,7 +133,7 @@ export const Hero = () => {
         <motion.div
           initial={{ opacity: 0, x: 36 }}
           animate={{ opacity: 1, x: 0 }}
-          transition={{ delay: 0.12, type: "spring", stiffness: 120, damping: 18 }}
+          transition={{ delay: 0.12, type: "spring" as const, stiffness: 120, damping: 18 }}
           className="relative z-10 w-full max-w-md md:max-w-lg"
         >
           <div className="relative overflow-hidden rounded-3xl border border-amber-200/20 bg-linear-to-b from-neutral-900/60 via-black to-black/90 p-px shadow-[0_0_70px_rgba(0,0,0,0.9)]">

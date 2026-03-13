@@ -11,7 +11,7 @@ export const CTA = () => {
           initial={{ opacity: 0, scale: 0.96 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true, margin: "-80px" }}
-          transition={{ type: "spring", stiffness: 120, damping: 18 }}
+          transition={{ type: "spring" as const, stiffness: 120, damping: 18 }}
           className="relative overflow-hidden rounded-3xl border border-amber-300/35 bg-linear-to-r from-amber-300/10 via-neutral-950 to-emerald-300/10 p-6 text-center text-neutral-50 shadow-[0_0_70px_rgba(251,191,36,0.25)] md:text-left"
         >
           <div className="pointer-events-none absolute -left-10 top-0 h-40 w-40 rounded-full bg-amber-300/10 blur-3xl" />
